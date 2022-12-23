@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "libs/bootstrap-reboot.min";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import "libs/animate";
+
+@import "base/variables";
+@import "base/fonts";
+@import "base/body";
+@import "base/mixins";
+@import "base/container";
+
+@import "general/btn";
+@import "general/titels";
+@import "general/text";
+@import "general/devaider";
+@import "general/circule";
+
+@import "blocks/side-panel";
+@import "blocks/promo";
+@import "blocks/hamburger";
+@import "blocks/menu";
+@import "blocks/aboutme";
+@import "blocks/resume";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/price";
+@import "blocks/contacts";
+
+@import "base/container-media";
+
+@import "blocks/side-panel-media.scss";
+@import "blocks/menu-media";
+@import "blocks/promo-media";
+@import "blocks/aboutme-media";
+@import "blocks/resume-media";
+@import "blocks/skills-media";
+@import "blocks/portfolio-media";
+@import "blocks/prise-media";
+@import "blocks/contacts-media";
+
+
+@import "general/titels-media";
+@import "general/btn-media";
+@import "general/devaider-media";
+
+@import "politics/politics"

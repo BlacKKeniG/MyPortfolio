@@ -1,0 +1,56 @@
+.resume {
+    padding-top: 120px;
+    min-height: 560px;
+
+    &__wrapper {
+        padding: 0 89px 0 72px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 425px));
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 45px 0 0 42px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 39px 1fr;
+        gap: 12px;
+
+        &::before {
+            content: "";
+            width: 1px;
+            height: calc(100% + 11px);
+            background: $second-color;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+        }
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 42px;
+            background: $second-color;
+            position: absolute;
+            left: 0;
+            top: 63px;
+        }
+    }
+
+    &__item-header-block {
+        position: relative;
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 20px;
+    }
+
+    &__item-icon {
+        position: absolute;
+        top: 7px;
+        left: 6px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

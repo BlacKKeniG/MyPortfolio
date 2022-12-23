@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+    .contacts {
+        padding: 60px 0 50px 0;
+
+        &__wrapper {
+            grid-template-columns: 350px auto;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__photo {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        &__form {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 45px) 182px auto;
+
+            &__item {
+
+                &_gcol-1-3 {
+                    grid-column: auto;
+                }
+            }
+
+            &__trigers {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, auto);
+                row-gap: 15px;
+            }
+
+            &__policity {
+                grid-row: 1/2;
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,31 @@
+.hamburger {
+    width: 36px;
+    height: 21px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+
+    &__line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: $decor-color;
+
+        &_long {
+            width: 36px;
+        }
+    }
+
+    &:hover {
+        align-items: flex-start;
+
+        .hamburger__line {
+            background: $hover-color;
+        }
+    }
+}

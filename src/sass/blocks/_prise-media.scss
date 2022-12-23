@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+    .price {
+        &__wrapper {
+            padding: 0;
+        }
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .price {
+        padding-top: 30px;
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+}

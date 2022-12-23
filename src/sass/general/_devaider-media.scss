@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+    .devaider {
+        &_center {
+            margin: 25px auto 40px auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .devaider {
+        &_center {
+            margin-top: 15px;
+        }
+    }
+}

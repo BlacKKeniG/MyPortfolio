@@ -1,0 +1,40 @@
+.btn {
+    padding: 0 25px;
+    min-width: 145px;
+    height: 45px;
+    color: $second-color;
+    text-shadow: 1px 1px 10px #fff, 0 0 0.5em #fff, 0em 0em 0.2em #fff;
+    background-color: $decor-color;
+    background: -webkit-linear-gradient(45deg, $hover-color, $decor-color);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, $hover-color, $decor-color);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px $main-color;
+    animation-fill-mode: backwards;
+    transition: all 0.1s;
+    cursor: pointer;
+
+    &:hover {
+        //background: $hover-color;
+        color: $second-color;
+    }
+
+    &:active {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+
+    &_white-shadow {
+        box-shadow: 2px 2px #fff;
+
+    }
+}

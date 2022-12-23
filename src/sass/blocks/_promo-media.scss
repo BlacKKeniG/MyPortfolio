@@ -1,0 +1,30 @@
+@media(max-width: 1330px) {
+    .promo {
+        &__content {
+            padding-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        &__btns-wrapper {
+            width: 290px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media(max-width: 350px) {
+    .promo {
+        &__content {
+            padding-left: 0px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin hover_scale {
+    scale: 1.15;
+}
+
+@mixin scale_none {
+    scale: 0;
+}
+
+@mixin optimization_cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

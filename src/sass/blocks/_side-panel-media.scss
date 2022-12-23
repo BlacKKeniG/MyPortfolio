@@ -1,0 +1,31 @@
+@media (max-width: 1400px) {
+    .side-panel {
+        position: absolute;
+        transform: rotate(0deg);
+        top: auto;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &__rotate-back {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .side-panel {
+        width: 300px;
+
+
+        &__devaider {
+            width: 50px;
+        }
+    }
+}
+
+@media(max-height: 420px) {
+    .side-panel {
+        display: none;
+    }
+}

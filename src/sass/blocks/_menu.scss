@@ -1,0 +1,130 @@
+.menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.6s;
+
+    &.active {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    &__block {
+        width: 340px;
+        height: 100%;
+        padding: 25px 25px 0 40px;
+        background: $hover-color;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        transition: all 0.6s;
+    }
+
+    &__close {
+        height: 30px;
+        text-align: right;
+    }
+
+    #menu-cross {
+        width: 30px;
+        cursor: pointer;
+
+        &:hover {
+            path {
+                fill: $main-color;
+            }
+        }
+
+        &:active {
+            width: 20px;
+            transform: translate(-7px, 7px);
+        }
+    }
+
+    &__list {
+        padding: 88px 0 0 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list-item {
+        height: 36px;
+        padding-left: 35px;
+        margin-bottom: 15px;
+        position: relative;
+
+
+        &::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            border: 3px solid $second-color;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+
+        &:hover {
+            background: $decor-color;
+
+            &::before {
+                background: $second-color;
+            }
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: $main-color;
+
+        &:hover {
+            color: $main-color;
+            font-size: 26px;
+        }
+    }
+
+    &__social {
+        width: 90px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 50px;
+        left: 128px;
+    }
+
+    &__social-link {
+        width: 20px;
+
+        &:hover {
+            svg {
+                @include hover_scale;
+            }
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $main-color;
+        opacity: 0.70;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

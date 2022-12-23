@@ -1,0 +1,10 @@
+.circule {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: $decor-color;
+    background: -webkit-linear-gradient(45deg, $hover-color, $decor-color);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, $hover-color, $decor-color);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

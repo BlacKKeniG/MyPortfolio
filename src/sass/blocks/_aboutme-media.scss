@@ -1,0 +1,57 @@
+@media(max-width: 1200px) {
+    .aboutme {
+        padding-top: 60px;
+
+        &__container {
+            padding-left: 0;
+            gap: 20px;
+
+        }
+
+        &__skills-wrapper {
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .aboutme {
+        padding-top: 40px;
+
+        &__container {
+            grid-template-columns: 250px auto;
+        }
+
+        &__skills-wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        &__container {
+            grid-template: 400px / 1fr;
+            grid-auto-rows: auto;
+        }
+
+        &__photo {
+            grid-row: unset;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutme {
+        &__container {
+            padding: 0 10px 0 10px;
+            grid-template-rows: 380px;
+        }
+
+        &__skills-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}

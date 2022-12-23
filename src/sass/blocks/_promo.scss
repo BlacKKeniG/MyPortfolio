@@ -1,0 +1,25 @@
+.promo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0) url("../img/main_backgraund.jpg") no-repeat 50% 0/cover;
+
+    &__content {
+        padding-left: 100px;
+    }
+
+    &__titel_text-shadow {
+        text-shadow: 1px 1px 1px $second-color, 0.5em 0 0.5em $second-color, 0 0 0.2em $second-color;
+
+        span {
+            text-shadow: 1px 1px $second-color;
+        }
+    }
+
+    &__btns-wrapper {
+        width: 312px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

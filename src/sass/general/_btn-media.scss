@@ -1,0 +1,9 @@
+@media(max-width: 768px) {
+    .btn {
+        min-width: 135px;
+
+        &:hover {
+            background: $decor-color;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.price {
+    padding-top: 60px;
+
+    &__wrapper {
+        padding: 0 50px 0 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, auto));
+        grid-auto-rows: 1fr;
+        justify-content: space-between;
+        row-gap: 15px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        gap: 5px;
+
+        &_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+}

@@ -1,0 +1,47 @@
+.side-panel {
+    height: 25px;
+    width: 350px;
+    position: absolute;
+    top: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(-90deg);
+
+    &__link {
+        width: 25px;
+
+        svg path {
+            fill: $decor-color;
+        }
+
+        &:hover {
+            svg {
+                width: 27px;
+
+                path {
+                    fill: $hover-color;
+                }
+            }
+        }
+    }
+
+    &__devaider {
+        height: 2px;
+        width: 70px;
+        background-color: $decor-color;
+    }
+
+    &__text {
+        height: 25px;
+        width: 150px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $decor-color;
+    }
+
+    &__rotate-back {
+        transform: rotate(90deg);
+    }
+}
